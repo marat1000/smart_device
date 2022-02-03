@@ -1,0 +1,119 @@
+.intro {
+    padding-top: 120px;
+    padding-bottom: 70px;
+    background-image: url("../img/intro-bg1@1x.png"), url("../img/intro-bg2@1x.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: 86% 70%, 0 0;
+    background-color: #1b2d37;
+    min-height: 880px;
+
+    @media (max-width: $tablet-width-max) {
+        min-height: 685px;
+        background-size: 59%, 185%;
+        background-position: 159% 32%, 50% -270%;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        min-height: 645px;
+        background-size: 100%, 450%;
+        background-position: right -20px top 22%, right -500px top -135px;
+    }
+}
+
+.intro__content {
+    width: 55%;
+
+    @media (max-width: $tablet-width-max) {
+        padding-left: 62px;
+        width: 70%;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        padding-left: 0;
+        width: 100%;
+    }
+}
+
+.intro__container h2 {
+    margin-top: 195px;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    color: $color-2;
+    text-transform: uppercase;
+
+    @media (max-width: $tablet-width-max) {
+        margin-top: 69px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        margin-top: 165px;
+        font-size: 40px;
+        line-height: 47px;
+    }
+}
+
+.intro__container p {
+    position: relative;
+    margin-left: 91px;
+    margin-bottom: 42px;
+    font-family: $font-1;
+    font-size: 22px;
+    line-height: 34px;
+    color: $color-2;
+
+    @media (max-width: $tablet-width-max) {
+        margin-left: 50px;
+        margin-bottom: 55px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        margin-left: 50px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.intro__container p::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    top: 16px;
+    left: -50px;
+    position: absolute;
+    background-color: $color-2;
+}
+
+.intro__link {
+    margin-left: 91px;
+
+    @media (max-width: $tablet-width-max) {
+        margin-left: 50px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        margin-left: 0;
+    }
+}
+
+.intro__link :last-child {
+    display: none;
+
+    @media (max-width: $mobile-width-max) {
+        display: inline;
+    }
+}
+
+.intro__link :first-child {
+    @media (max-width: $mobile-width-max) {
+        display: none;
+    }
+}

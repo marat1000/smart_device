@@ -1,0 +1,31 @@
+.button {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0.05em;
+    padding: 12px 27px;
+    color: $color-2;
+    background: transparent;
+    border: 1px solid $color-2;
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button_intro {
+    padding: 18px 45px;
+    font-size: 16px;
+    line-height: 19px;
+    background: $color-3;
+    border: none;
+
+    @media (max-width: $tablet-width-max) {
+        padding: 18px 33px;
+    }
+}

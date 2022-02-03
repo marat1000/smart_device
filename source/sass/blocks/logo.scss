@@ -1,0 +1,12 @@
+.logo {
+    @media (max-width: $mobile-width-max) {
+        width: 55px;
+        overflow: hidden;
+    }
+}
+
+.logo svg {
+    @media (max-width: $mobile-width-max) {
+        width: 150px;
+    }
+}

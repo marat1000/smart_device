@@ -1,0 +1,26 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    vertical-align: top;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
