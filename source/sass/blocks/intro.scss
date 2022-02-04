@@ -7,6 +7,10 @@
     background-color: #1b2d37;
     min-height: 880px;
 
+    @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/intro-bg1@2x.png"), url("../img/intro-bg2@2x.jpg");
+    }
+
     @media (max-width: $tablet-width-max) {
         min-height: 685px;
         background-size: 59%, 185%;
