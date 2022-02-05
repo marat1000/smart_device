@@ -1,4 +1,6 @@
 .logo {
+    fill: $color-2;
+
     @media (max-width: $mobile-width-max) {
         width: 55px;
         overflow: hidden;
@@ -8,5 +10,19 @@
 .logo svg {
     @media (max-width: $mobile-width-max) {
         width: 150px;
+    }
+}
+
+.logo_footer {
+    fill: $color-5;
+
+    @media (max-width: $mobile-width-max) {
+        width: initial;
+    }
+}
+
+.logo_footer svg {
+    @media (max-width: $mobile-width-max) {
+        width: initial;
     }
 }

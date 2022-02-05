@@ -1,9 +1,10 @@
 .contacts {
-    display: flex;
-    align-items: center;
-    font-family: "PT Mono", "Courier New", monospace;
+    font-family: 'PT Mono', 'Courier New', monospace;
     font-size: 16px;
     line-height: 18px;
+
+    display: flex;
+    align-items: center;
     color: $color-2;
 
     @include reset;
@@ -15,7 +16,7 @@
     }
 }
 
-.contacts > li + li {
+.contacts>li+li {
     margin-left: 75px;
 
     @media (max-width: $tablet-width-max) {

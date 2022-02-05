@@ -1,13 +1,13 @@
 .page-body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: 'Roboto Condensed', 'Arial', sans-serif;
     font-size: 20px;
     line-height: 30px;
-    overflow-x: hidden;
 
-    min-height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
     min-width: $mobile-width;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     color: $color-1;

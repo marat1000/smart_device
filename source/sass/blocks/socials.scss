@@ -1,0 +1,26 @@
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+
+    @include reset;
+}
+
+.socials li {
+    margin-bottom: 5px;
+}
+
+.socials a {
+    display: flex;
+    padding: 8px;
+}
+
+.socials li:first-child {
+    margin-left: -8px;
+}
+
+.socials li:last-child {
+    @media (max-width: $tablet-width-max) {
+        margin-right: -10px;
+    }
+}
