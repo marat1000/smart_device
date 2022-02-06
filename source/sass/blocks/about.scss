@@ -1,0 +1,113 @@
+.about__container {
+    padding-top: 55px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 40px;
+    background-image: url("../img/about-bg@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 170px 317px;
+    background-position: 110px 60px;
+
+    @media (min-resolution: $retina-dppx) {
+        background-image: url('../img/about-bg@2x.jpg');
+    }
+
+    @media (max-width: $tablet-width-max) {
+        padding-top: 5px;
+        padding-left: 25px;
+        padding-right: 24px;
+        background-size: 193px 360px;
+        background-position: -10px 5px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        padding-top: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: none;
+    }
+}
+
+.about__content {
+    padding-left: 180px;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 51px;
+    }
+
+    a {
+        margin-top: 38px;
+    }
+
+    @media (max-width: $tablet-width-max) {
+        padding-left: 185px;
+
+        h2 {
+            margin-bottom: 25px;
+
+            font-size: 32px;
+            line-height: 45px;
+        }
+
+        a {
+            margin-top: 43px;
+        }
+    }
+
+    @media (max-width: $mobile-width-max) {
+        padding-left: 0;
+
+        h2 {
+            margin-bottom: 22px;
+
+            font-size: 28px;
+            line-height: 39px;
+        }
+
+        a {
+            margin-top: 29px;
+        }
+    }
+}
+
+.about__content p {
+    margin-bottom: 20px;
+    padding-right: 5px;
+
+    font-family: $font-1;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-1;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $tablet-width-max) {
+        padding-left: 3px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+        margin-bottom: 40px;
+        padding-right: 0;
+    }
+}
+
+.about__content span:first-child {
+    @media (max-width: $tablet-width-max) {
+        display: none;
+    }
+}
+
+.about__content span:last-child {
+    display: none;
+
+    @media (max-width: $tablet-width-max) {
+        display: inline;
+    }
+}
