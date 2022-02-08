@@ -36,3 +36,12 @@
     border-color: $color-3;
     color: $color-3;
 }
+
+.button_form {
+    min-width: 40%;
+    padding: 14px 50px;
+
+    @media (max-width: $tablet-width-max) {
+        width: 100%;
+    }
+}
