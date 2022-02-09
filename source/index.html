@@ -13,6 +13,7 @@
 </head>
 
 <body class="page-body">
+
 <div style="display: none">
     <svg width="0" height="0">
         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" id="icon-check">
@@ -349,17 +350,14 @@
                             <ul>
                                 <li class="form__field">
                                     <label class="visually-hidden" for="user-name">Имя пользователя</label>
-                                    <input id="user-name" name="user-name" type="text" data-field="user-name"
-                                           placeholder="Имя" minlength="5" maxlength="50" required>
+                                    <input id="user-name" name="user-name" type="text" placeholder="Имя" minlength="5" maxlength="50" required>
                                 </li>
                                 <li class="form__field">
                                     <label class="visually-hidden" for="user-phone">Телефон пользователя</label>
-                                    <input id="user-phone" name="user-phone" type="tel" data-field="user-phone"
-                                           placeholder="Телефон" minlength="10" maxlength="10" required>
+                                    <input id="user-phone" name="user-phone" type="tel" placeholder="Телефон" minlength="10" maxlength="10" required>
                                 </li>
                             </ul>
-                            <textarea id="user-question" name="user-question" data-field="user-question"
-                                      placeholder="Ваш вопрос"></textarea>
+                            <textarea id="user-question" name="user-question" placeholder="Ваш вопрос"></textarea>
                             <div class="form__footer">
                                 <button class="button button_form" type="submit">Задать вопрос</button>
                                 <div class="form__field form__field_consent">
@@ -469,8 +467,37 @@
     </div>
 </footer>
 
-<div class="modal">
-</div>
+<section class="modal">
+    <h2>Закажите звонок</h2>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <div class="form form_modal">
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+            <ul>
+                <li class="form__field">
+                    <label class="visually-hidden" for="modal-user-name">Имя пользователя</label>
+                    <input id="modal-user-name" name="user-name" type="text" placeholder="Имя"
+                           minlength="5" maxlength="50" required>
+                </li>
+                <li class="form__field">
+                    <label class="visually-hidden" for="modal-user-phone">Телефон пользователя</label>
+                    <input id="modal-user-phone" name="user-phone" type="tel" placeholder="Телефон"
+                           minlength="10" maxlength="10" required>
+                </li>
+            </ul>
+            <textarea name="modal-user-question" id="modal-user-question" placeholder="Ваш вопрос"></textarea>
+            <div class="form__footer">
+                <button class="button" type="submit">Отправить</button>
+                <div class="form__field form__field_consent">
+                    <input class="visually-hidden" name="modal-consent" id="modal-consent" type="checkbox" required>
+                    <label for="modal-consent">Я согласен на обработку персональных данных</label>
+                </div>
+            </div>
+        </form>
+        <button class="modal__close" type="button" aria-label="Закрыть окно"></button>
+    </div>
+</section>
+
+<section class="overlay"></section>
 
 <script src="js/script.js"></script>
 </body>
