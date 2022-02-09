@@ -18,6 +18,15 @@ a {
     vertical-align: top;
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active,
+    &:focus {
+        opacity: 0.3;
+    }
 }
 
 img {

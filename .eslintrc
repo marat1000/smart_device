@@ -4,8 +4,14 @@ env:
   browser: true
   es6: true
 
+rules:
+  new-cap: 0
+
 parserOptions:
   ecmaVersion: 2017
+
+globals:
+  IMask: true
 
 extends:
     "htmlacademy/es5"

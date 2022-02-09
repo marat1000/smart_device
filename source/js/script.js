@@ -32,18 +32,23 @@ if (accordionToggles) {
 
 let buttonModal = document.querySelector('.page-header button');
 let modal = document.querySelector('.modal');
-let modalClose = document.querySelector('.modal__close');
+let firstInput = modal.querySelector('input');
+let modalClose = modal.querySelector('.modal__close');
+let consent = modal.querySelector('#modal-consent');
 let overlay = document.querySelector('.overlay');
 
 buttonModal.addEventListener('click', (evt) => {
   evt.preventDefault();
   modal.classList.add('modal__opened');
   overlay.classList.add('overlay__show');
+  document.body.style.overflow = 'hidden';
+  firstInput.focus();
   let closePopups = () => {
     modal.classList.remove('modal__opened');
     overlay.classList.remove('overlay__show');
     overlay.removeEventListener('click', modalsClickClose);
     document.removeEventListener('keydown', onFormEscKeydown);
+    document.body.style.overflow = '';
   };
   modalClose.addEventListener('click', () => {
     closePopups();
@@ -61,6 +66,12 @@ buttonModal.addEventListener('click', (evt) => {
   };
   overlay.addEventListener('click', modalsClickClose);
 });
+consent.addEventListener('keydown', function (event) {
+  if (event.code === 'Tab' && !event.shiftKey) { // Tab без Shift
+    event.preventDefault();
+    firstInput.focus();
+  }
+});
 
 // localStorage
 
@@ -73,3 +84,13 @@ formInputs.forEach((item) => {
   });
 });
 
+// Mask for phone inputs
+
+let modalPhone = document.querySelector('#modal-user-phone');
+let phone = document.querySelector('#user-phone');
+let MASK_OPTIONS = {
+  mask: '{+7}(000)0000000'
+};
+
+IMask(phone, MASK_OPTIONS);
+IMask(modalPhone, MASK_OPTIONS);

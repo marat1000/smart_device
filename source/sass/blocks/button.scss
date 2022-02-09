@@ -16,6 +16,15 @@
     border-radius: 5px;
     background: transparent;
     appearance: none;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active,
+    &:focus {
+        opacity: 0.3;
+    }
 }
 
 .button_intro {

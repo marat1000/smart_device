@@ -1,6 +1,10 @@
 .logo {
     fill: $color-2;
 
+    &:hover {
+        opacity: initial;
+    }
+
     @media (max-width: $mobile-width-max) {
         width: 55px;
         overflow: hidden;

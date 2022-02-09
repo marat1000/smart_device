@@ -1,3 +1,7 @@
+.advantages {
+    background-color: $color-2;
+}
+
 .advantages__container {
     position: relative;
     padding-top: 110px;
@@ -7,7 +11,7 @@
 
     &::before {
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         top: -30px;
         left: -530px;
         display: block;
@@ -54,6 +58,7 @@
 
 .advantages__item {
     width: calc(50% - 15px);
+    z-index: 2;
     min-height: 300px;
     margin-bottom: 30px;
     padding-top: 39px;

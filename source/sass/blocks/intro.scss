@@ -5,7 +5,7 @@
     background-color: $color-6;
     background-image: url('../img/intro-bg1@1x.png'), url('../img/intro-bg2@1x.jpg');
     background-repeat: no-repeat, repeat;
-    background-position: 86% 70%, 0 0;
+    background-position: calc(50vw + 80px) 70%, 0 0;
 
     @media (min-resolution: $retina-dppx) {
         background-image: url('../img/intro-bg1@2x.png'), url('../img/intro-bg2@2x.jpg');
