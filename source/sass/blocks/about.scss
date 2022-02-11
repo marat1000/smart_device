@@ -42,10 +42,6 @@
     line-height: 51px;
   }
 
-  a {
-    margin-top: 38px;
-  }
-
   @media (max-width: $tablet-width-max) {
     padding-left: 185px;
 
@@ -54,10 +50,6 @@
 
       font-size: 32px;
       line-height: 45px;
-    }
-
-    a {
-      margin-top: 43px;
     }
   }
 
@@ -70,10 +62,18 @@
       font-size: 28px;
       line-height: 39px;
     }
+  }
+}
 
-    a {
-      margin-top: 29px;
-    }
+.about__button {
+  margin-top: 38px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 43px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 29px;
   }
 }
 
