@@ -1,136 +1,136 @@
 .products {
-    background-color: $color-6;
+  background-color: $color-6;
 }
 
 .products__container {
-    padding-top: 90px;
-    padding-right: 120px;
-    padding-bottom: 125px;
-    padding-left: 120px;
+  padding-top: 90px;
+  padding-right: 120px;
+  padding-bottom: 125px;
+  padding-left: 120px;
 
-    @media (max-width: $tablet-width-max) {
-        padding-top: 50px;
-        padding-right: 0;
-        padding-bottom: 35px;
-        padding-left: 0;
-    }
+  @media (max-width: $tablet-width-max) {
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 35px;
+    padding-left: 0;
+  }
 }
 
 .products__header {
-    margin-bottom: 52px;
+  margin-bottom: 52px;
+
+  p {
+    font-size: 36px;
+    line-height: 51px;
+
+    margin-top: 0;
+    color: $color-2;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 50px;
 
     p {
-        font-size: 36px;
-        line-height: 51px;
+      font-size: 32px;
+      line-height: 45px;
 
-        margin-top: 0;
-        color: $color-2;
+      padding-right: 10px;
     }
+  }
 
-    @media (max-width: $tablet-width-max) {
-        margin-bottom: 50px;
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 42px;
 
-        p {
-            font-size: 32px;
-            line-height: 45px;
+    p {
+      font-size: 28px;
+      line-height: 39px;
 
-            padding-right: 10px;
-        }
+      padding-right: 0;
+      padding-left: 10px;
     }
-
-    @media (max-width: $mobile-width-max) {
-        margin-bottom: 42px;
-
-        p {
-            font-size: 28px;
-            line-height: 39px;
-
-            padding-right: 0;
-            padding-left: 10px;
-        }
-    }
+  }
 }
 
 .products__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    @include reset;
+  @include reset;
 }
 
 .products__item {
-    flex: 0 1 calc(33.33% - 20px);
+  flex: 0 1 calc(33.33% - 20px);
 
-    height: 620px;
+  height: 620px;
+
+  a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 50px;
+    padding-right: 43px;
+    padding-bottom: 50px;
+    padding-left: 43px;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 0;
+      width: 63px;
+      height: 63px;
+
+      content: '';
+      background-color: $color-3;
+      background-image: url('../img/icon-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: 55% center;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+    margin-top: 0;
+    color: $color-2;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    flex: 100%;
+
+    height: 256px;
+    margin-bottom: 45px;
 
     a {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        height: 100%;
-        padding-top: 50px;
-        padding-right: 43px;
-        padding-bottom: 50px;
-        padding-left: 43px;
-
-        &::before {
-            position: absolute;
-            z-index: 1;
-            right: 0;
-            bottom: 0;
-            width: 63px;
-            height: 63px;
-
-            content: '';
-            background-color: $color-3;
-            background-image: url('../img/icon-arrow.svg');
-            background-repeat: no-repeat;
-            background-position: 55% center;
-        }
+      padding-top: 40px;
+      padding-right: 45px;
+      padding-bottom: 40px;
+      padding-left: 45px;
     }
+  }
 
-    h3 {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 30px;
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 30px;
 
-        margin-top: 0;
-        color: $color-2;
+    a {
+      padding-top: 20px;
+      padding-right: 35px;
+      padding-bottom: 20px;
+      padding-left: 35px;
     }
-
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: .2;
-        object-fit: cover;
-    }
-
-    @media (max-width: $tablet-width-max) {
-        flex: 100%;
-
-        height: 256px;
-        margin-bottom: 45px;
-
-        a {
-            padding-top: 40px;
-            padding-right: 45px;
-            padding-bottom: 40px;
-            padding-left: 45px;
-        }
-    }
-
-    @media (max-width: $mobile-width-max) {
-        margin-bottom: 30px;
-
-        a {
-            padding-top: 20px;
-            padding-right: 35px;
-            padding-bottom: 20px;
-            padding-left: 35px;
-        }
-    }
+  }
 }

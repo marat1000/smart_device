@@ -1,56 +1,56 @@
 .button {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    display: inline-block;
-    padding: 12px 27px;
-    cursor: pointer;
-    transition: 0.2s;
-    text-align: center;
-    vertical-align: top;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $color-2;
-    border: 1px solid $color-2;
-    border-radius: 5px;
-    background: transparent;
-    appearance: none;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  display: inline-block;
+  padding: 12px 27px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-2;
+  border: 1px solid $color-2;
+  border-radius: 5px;
+  background: transparent;
+  appearance: none;
 
-    &:hover {
-        opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active,
-    &:focus {
-        opacity: 0.3;
-    }
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .button_intro {
-    font-size: 16px;
-    line-height: 19px;
+  font-size: 16px;
+  line-height: 19px;
 
-    padding: 18px 45px;
-    border: none;
-    background: $color-3;
+  padding: 18px 45px;
+  border: none;
+  background: $color-3;
 
-    @media (max-width: $tablet-width-max) {
-        padding: 18px 33px;
-    }
+  @media (max-width: $tablet-width-max) {
+    padding: 18px 33px;
+  }
 }
 
 .button_about {
-    padding: 13px 50px;
-    border-color: $color-3;
-    color: $color-3;
+  padding: 13px 50px;
+  border-color: $color-3;
+  color: $color-3;
 }
 
 .button_form {
-    min-width: 40%;
-    padding: 14px 50px;
+  min-width: 40%;
+  padding: 14px 50px;
 
-    @media (max-width: $tablet-width-max) {
-        width: 100%;
-    }
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+  }
 }

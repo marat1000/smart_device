@@ -1,49 +1,49 @@
 .modal {
-    position: fixed;
-    z-index: 10;
-    top: 11.7vh;
-    left: calc(50% - 245px);
-    display: none;
-    width: 490px;
-    min-height: 605px;
-    padding-right: 42px;
-    padding-left: 42px;
-    color: $color-2;
-    background: $color-3;
+  position: fixed;
+  z-index: 10;
+  top: 11.7vh;
+  left: calc(50% - 245px);
+  display: none;
+  width: 490px;
+  min-height: 605px;
+  padding-right: 42px;
+  padding-left: 42px;
+  color: $color-2;
+  background: $color-3;
 }
 
 .modal h2 {
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 39px;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 39px;
 
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 15px;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .modal p {
-    font-family: $font-1;
-    font-size: 16px;
-    line-height: 22px;
-    width: 380px;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 31px;
+  font-family: $font-1;
+  font-size: 16px;
+  line-height: 22px;
+  width: 380px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 31px;
 }
 
 .modal__close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: url('../img/icon-cross.svg') no-repeat 50% 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: url('../img/icon-cross.svg') no-repeat 50% 50%;
 }
 
 .modal__opened {
-    display: block;
+  display: block;
 }

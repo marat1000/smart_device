@@ -1,135 +1,131 @@
-.advantages {
-    background-color: $color-2;
-}
-
 .advantages__container {
-    position: relative;
-    padding-top: 110px;
-    padding-right: 140px;
-    padding-bottom: 20px;
-    padding-left: 140px;
+  position: relative;
+  padding-top: 110px;
+  padding-right: 140px;
+  padding-bottom: 20px;
+  padding-left: 140px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -530px;
+    display: block;
+    width: 100vw;
+    height: 1347px;
+    content: '';
+    background-image: url('../img/advantages-bg.svg');
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 55px;
+    padding-right: 24px;
+    padding-left: 24px;
 
     &::before {
-        position: absolute;
-        z-index: 0;
-        top: -30px;
-        left: -530px;
-        display: block;
-        width: 100vw;
-        height: 1347px;
-        content: '';
-        background-image: url('../img/advantages-bg.svg');
-        background-repeat: no-repeat;
+      top: -30px;
+      left: 0;
+      background-position: -640px -55px;
     }
+  }
 
-    @media (max-width: $tablet-width-max) {
-        padding-top: 55px;
-        padding-right: 24px;
-        padding-left: 24px;
+  @media (max-width: $mobile-width-max) {
+    padding-top: 38px;
+    padding-right: 16px;
+    padding-left: 14px;
 
-        &::before {
-            top: -30px;
-            left: 0;
-            background-position: -640px -55px;
-        }
+    &::before {
+      top: -30px;
+      left: 0;
+      height: 1600px;
+      background-position: -975px 525px;
     }
-
-    @media (max-width: $mobile-width-max) {
-        padding-top: 38px;
-        padding-right: 16px;
-        padding-left: 14px;
-
-        &::before {
-            top: -30px;
-            left: 0;
-            height: 1600px;
-            background-position: -975px 525px;
-        }
-    }
+  }
 }
 
 .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    @include reset;
+  @include reset;
 }
 
 .advantages__item {
-    width: calc(50% - 15px);
-    z-index: 2;
-    min-height: 300px;
-    margin-bottom: 30px;
-    padding-top: 39px;
-    padding-right: 44px;
-    padding-bottom: 44px;
-    padding-left: 42px;
-    border-top: 1px solid $color-7;
-    border-right: 1px solid $color-7;
-    border-bottom: 1px solid $color-7;
-    border-left: 3px solid $color-3;
-    background-color: $color-2;
-    fill: $color-3;
+  width: calc(50% - 15px);
+  z-index: 2;
+  min-height: 300px;
+  margin-bottom: 30px;
+  padding-top: 39px;
+  padding-right: 44px;
+  padding-bottom: 44px;
+  padding-left: 42px;
+  border-top: 1px solid $color-7;
+  border-right: 1px solid $color-7;
+  border-bottom: 1px solid $color-7;
+  border-left: 3px solid $color-3;
+  background-color: $color-2;
+  fill: $color-3;
 
-    svg {
-        min-height: 35px;
+  svg {
+    min-height: 35px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    color: $color-3;
+  }
+
+  p {
+    font-family: $font-1;
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-1;
+  }
+
+  &:hover {
+    border-color: $color-3;
+    background-color: $color-3;
+    fill: $color-2;
+
+    h3,
+    p {
+      color: $color-2;
     }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    min-height: 230px;
+    padding-top: 23px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-left: 25px;
 
     h3 {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 34px;
-        margin-top: 15px;
-        margin-bottom: 17px;
-        color: $color-3;
+      margin-top: 2px;
+      margin-bottom: 10px;
     }
 
     p {
-        font-family: $font-1;
-        font-size: 16px;
-        line-height: 21px;
-        color: $color-1;
+      margin-top: 0;
     }
+  }
 
-    &:hover {
-        border-color: $color-3;
-        background-color: $color-3;
-        fill: $color-2;
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 14px;
+    padding-bottom: 14px;
 
-        h3,
-        p {
-            color: $color-2;
-        }
+    h3 {
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 5px;
     }
-
-    @media (max-width: $tablet-width-max) {
-        min-height: 230px;
-        padding-top: 23px;
-        padding-right: 20px;
-        padding-bottom: 9px;
-        padding-left: 25px;
-
-        h3 {
-            margin-top: 2px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-top: 0;
-        }
-    }
-
-    @media (max-width: $mobile-width-max) {
-        width: 100%;
-        margin-bottom: 20px;
-        padding-right: 14px;
-        padding-bottom: 14px;
-
-        h3 {
-            font-size: 20px;
-            line-height: 28px;
-            margin-top: 5px;
-        }
-    }
+  }
 }
