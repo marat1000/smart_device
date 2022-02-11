@@ -3,12 +3,12 @@
   padding-top: 120px;
   padding-bottom: 70px;
   background-color: $color-6;
-  background-image: url('../img/intro-bg1@1x.png'), url('../img/intro-bg2@1x.jpg');
+  background-image: url("../img/intro-bg1@1x.png"), url("../img/intro-bg2@1x.jpg");
   background-repeat: no-repeat, repeat;
   background-position: calc(50vw + 80px) 70%, 0 0;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url('../img/intro-bg1@2x.png'), url('../img/intro-bg2@2x.jpg');
+    background-image: url("../img/intro-bg1@2x.png"), url("../img/intro-bg2@2x.jpg");
     background-size: 705px 515px, 1920px 865px;
   }
 
@@ -98,7 +98,7 @@
   width: 60px;
   height: 2px;
 
-  content: '';
+  content: "";
   background-color: $color-2;
 
   @media (max-width: $tablet-width-max) {

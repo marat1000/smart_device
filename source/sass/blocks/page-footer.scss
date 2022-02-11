@@ -39,7 +39,7 @@
 
 .page-footer__section {
   h3 {
-    font-family: 'Roboto Condensed', 'Arial', sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 16px;
@@ -86,7 +86,7 @@
     display: none;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    opacity: .5;
+    opacity: 0.5;
     color: $color-6;
   }
 
@@ -104,7 +104,7 @@
       width: 100vw;
       height: 1px;
 
-      content: '';
+      content: "";
       background-color: transparentize($color-4, 0.8);
     }
 
@@ -143,7 +143,7 @@
 }
 
 .page-footer__item {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .page-footer__item a {
@@ -225,7 +225,7 @@
         width: 16px;
         height: 1px;
 
-        content: '';
+        content: "";
         background-color: #c4c4c4;
       }
 
@@ -261,7 +261,6 @@
     padding-bottom: 26px;
 
     h3 {
-
       &::before,
       &::after {
         display: none;

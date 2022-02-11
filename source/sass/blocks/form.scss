@@ -39,7 +39,7 @@
     }
   }
 
-  button[type='submit'] {
+  button[type="submit"] {
     min-width: 47%;
     max-width: 80%;
     margin-right: 38px;
@@ -52,7 +52,7 @@
       height: 160px;
     }
 
-    button[type='submit'] {
+    button[type="submit"] {
       max-width: 280px;
       margin-right: 41px;
       padding-bottom: 15px;
@@ -64,7 +64,7 @@
       height: 105px;
     }
 
-    button[type='submit'] {
+    button[type="submit"] {
       max-width: 100%;
       margin-right: 0;
       margin-bottom: 31px;
@@ -86,7 +86,7 @@
     margin-top: 23px;
   }
 
-  button[type='submit'] {
+  button[type="submit"] {
     max-width: 100%;
     width: 100%;
     margin-right: 0;
@@ -169,7 +169,7 @@
       left: 0;
       width: 16px;
       height: 16px;
-      content: '';
+      content: "";
       border: 1px solid transparentize($color-2, 0.2);
     }
 
@@ -180,8 +180,8 @@
       display: none;
       width: 8px;
       height: 5px;
-      content: '';
-      background-image: url('.././img/icon-check.svg');
+      content: "";
+      background-image: url(".././img/icon-check.svg");
       background-repeat: no-repeat;
       background-position: center;
     }

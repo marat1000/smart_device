@@ -9,7 +9,7 @@
   background-position: 110px 60px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url('../img/about-bg@2x.jpg');
+    background-image: url("../img/about-bg@2x.jpg");
   }
 
   @media (max-width: $tablet-width-max) {

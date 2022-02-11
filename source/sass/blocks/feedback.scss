@@ -1,12 +1,12 @@
 .feedback {
   background-color: $color-3;
-  background-image: url('../img/feedback-bg@1x.png');
+  background-image: url("../img/feedback-bg@1x.png");
   background-repeat: no-repeat;
   background-position: calc(50vw - 780px) -60px;
   background-size: 1891px 765px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url('../img/feedback-bg@2x.png');
+    background-image: url("../img/feedback-bg@2x.png");
   }
 
   @media (max-width: $tablet-width-max) {
