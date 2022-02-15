@@ -3,25 +3,35 @@
   padding-top: 120px;
   padding-bottom: 70px;
   background-color: $color-6;
-  background-image: url("../img/intro-bg1@1x.png"), url("../img/intro-bg2@1x.jpg");
+  background-image: url('../img/intro-bg1-desktop@1x.png'), url('../img/intro-bg2.png');
   background-repeat: no-repeat, repeat;
-  background-position: calc(50vw + 80px) 70%, 0 0;
+  background-position: calc(50vw + 80px) 120px, 0 0;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: url("../img/intro-bg1@2x.png"), url("../img/intro-bg2@2x.jpg");
-    background-size: 705px 515px, 1920px 865px;
+    background-image: url('../img/intro-bg1-desktop@2x.png'), url('../img/intro-bg2.png');
+    background-size: 713px 655px, 1920px 865px;
   }
 
   @media (max-width: $tablet-width-max) {
     min-height: 685px;
-    background-position: 159% 32%, 50% -270%;
-    background-size: 59%, 185%;
+    background-image: url('../img/intro-bg1-tablet@1x.png'), url('../img/intro-bg2.png');
+    background-position: right 0 top 0, 50% -270%;
+    background-size: 330px 466px, 100%;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url('../img/intro-bg1-tablet@2x.png'), url('../img/intro-bg2.png');
+    }
   }
 
   @media (max-width: $mobile-width-max) {
-    min-height: 645px;
-    background-position: right -20px top 22%, right -500px top -135px;
-    background-size: 100%, 450%;
+    min-height: 550px;
+    background-image: url('../img/intro-bg1-mobile@1x.png'), url('../img/intro-bg2.png');
+    background-position: 25px -50px, 50% -270%;
+    background-size: 631px 484px, 100%;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url('../img/intro-bg1-mobile@2x.png'), url('../img/intro-bg2.png');
+    }
   }
 }
 

@@ -1,15 +1,17 @@
 .modal {
   position: fixed;
   z-index: 10;
-  top: 11.7vh;
-  left: calc(50% - 245px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
   width: 490px;
-  min-height: 605px;
+  max-height: 95vh;
   padding-right: 42px;
   padding-left: 42px;
   color: $color-2;
   background: $color-3;
+  overflow-y: auto;
 }
 
 .modal h2 {
@@ -42,6 +44,11 @@
   border: none;
   outline: none;
   background: url("../img/icon-cross.svg") no-repeat 50% 50%;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $color-2;
+  }
 }
 
 .modal__opened {

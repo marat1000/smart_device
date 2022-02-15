@@ -4,6 +4,7 @@
   line-height: 18px;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: $color-2;
 
@@ -16,7 +17,7 @@
   }
 }
 
-.contacts > li + li {
+.contacts li {
   margin-left: 75px;
 
   @media (max-width: $tablet-width-max) {

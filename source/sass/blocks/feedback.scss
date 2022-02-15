@@ -9,6 +9,10 @@
     background-image: url("../img/feedback-bg@2x.png");
   }
 
+  @media (max-width: 1290px) {
+    background-position: calc(50vw - 910px) -60px;
+  }
+
   @media (max-width: $tablet-width-max) {
     background-image: none;
   }

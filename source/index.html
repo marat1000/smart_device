@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description" content="Официальный сайт компании Smart Device - производство и монтаж печатных плат">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Smart Device</title>
@@ -201,7 +202,7 @@
 
 <header class="page-header">
   <div class="page-body__inner page-header__container">
-    <a class="page-header__logo logo" aria-label="Логотип Smart Device">
+    <a class="page-header__logo logo">
       <svg width="202" height="52">
         <use xlink:href="#icon-logo"></use>
       </svg>
@@ -357,8 +358,8 @@
                         srcset="img/products-3-tablet@1x.jpg 1x, img/products-3-tablet@2x.jpg 2x">
                 <!-- 1х: 370x620px; 2x: 740x1240px -->
                 <img src="img/products-3-desktop@1x.jpg"
-                      srcset="img/products-3-desktop@2x.jpg 2x" alt="Светодиодная лента"
-                      width="370" height="620">
+                     srcset="img/products-3-desktop@2x.jpg 2x" alt="Светодиодная лента"
+                     width="370" height="620">
               </picture>
             </a>
           </li>
@@ -374,7 +375,7 @@
           <b>Остались вопросы? Задайте их нам!</b>
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="feedback__form form">
-            <form action="https://echo.htmlacademy.ru/" method="POST">
+            <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
               <ul>
                 <li class="form__field">
                   <label class="visually-hidden" for="user-name">Имя пользователя</label>
@@ -383,7 +384,7 @@
                 </li>
                 <li class="form__field">
                   <label class="visually-hidden" for="user-phone">Телефон пользователя</label>
-                  <input id="user-phone" name="user-phone" type="tel" placeholder="Телефон" minlength="14"
+                  <input id="user-phone" pattern=".{14,14}" name="user-phone" type="tel" placeholder="Телефон" minlength="14"
                           maxlength="14" required>
                 </li>
               </ul>
@@ -407,7 +408,7 @@
 <footer class="page-footer page-body__footer">
   <div class="page-body__inner page-footer__top">
     <div class="page-footer__section page-footer__section_general">
-      <a class="page-footer__logo logo logo_footer" aria-label="Логотип Smart Device">
+      <a class="page-footer__logo logo logo_footer">
         <svg width="202" height="52">
           <use xlink:href="#icon-logo"></use>
         </svg>
@@ -501,7 +502,7 @@
   <h2>Закажите звонок</h2>
   <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
   <div class="form form_modal">
-    <form action="https://echo.htmlacademy.ru/" method="POST">
+    <form action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
       <ul>
         <li class="form__field">
           <label class="visually-hidden" for="modal-user-name">Имя пользователя</label>
@@ -510,7 +511,7 @@
         </li>
         <li class="form__field">
           <label class="visually-hidden" for="modal-user-phone">Телефон пользователя</label>
-          <input id="modal-user-phone" name="user-phone" type="tel" placeholder="Телефон"
+          <input id="modal-user-phone" pattern=".{14,14}" name="user-phone" type="tel" placeholder="Телефон"
                   minlength="14" maxlength="14" required>
         </li>
       </ul>
@@ -523,7 +524,7 @@
         </div>
       </div>
     </form>
-    <button class="modal__close" type="button" aria-label="Закрыть окно"></button>
+    <button class="modal__close" type="button" aria-label="Закрыть окно" tabindex="0"></button>
   </div>
 </section>
 

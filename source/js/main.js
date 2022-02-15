@@ -36,9 +36,9 @@ let overlay = document.querySelector('.overlay');
 if (modal) {
   let firstInput = modal.querySelector('input');
   let modalClose = modal.querySelector('.modal__close');
-  let consent = modal.querySelector('#modal-consent');
+  let close = modal.querySelector('.modal__close');
 
-  if (buttonModal && firstInput && modalClose && consent && overlay) {
+  if (buttonModal && firstInput && modalClose && close && overlay) {
     buttonModal.addEventListener('click', (evt) => {
       evt.preventDefault();
       modal.classList.add('modal__opened');
@@ -68,7 +68,7 @@ if (modal) {
       };
       overlay.addEventListener('click', modalsClickClose);
     });
-    consent.addEventListener('keydown', function (event) {
+    close.addEventListener('keydown', function (event) {
       if (event.code === 'Tab' && !event.shiftKey) {
         event.preventDefault();
         firstInput.focus();
