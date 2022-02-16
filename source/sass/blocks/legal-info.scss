@@ -20,6 +20,7 @@
   justify-content: center;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -41,10 +42,13 @@
   flex: 33.33%;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 420px;
 
-  span:last-child {
-    padding-right: 40px;
+  span {
+    padding-right: 10px;
+  }
+
+  @media (max-width: 1330px) {
+    flex: 35%;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -57,7 +61,12 @@
   flex: 33.33%;
   justify-content: center;
 
+  @media (max-width: 1330px) {
+    flex: 20%;
+  }
+
   @media (max-width: $tablet-width-max) {
+    flex: 33.33%;
     justify-content: flex-start;
   }
 

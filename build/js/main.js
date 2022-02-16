@@ -95,7 +95,7 @@ if (formInputs) {
 let phone = document.querySelector('#user-phone');
 let modalPhone = document.querySelector('#modal-user-phone');
 let MASK_OPTIONS = {
-  mask: '{+7}(000)0000000'
+  mask: '+{7}(000)0000000'
 };
 if (phone) {
   IMask(phone, MASK_OPTIONS);
