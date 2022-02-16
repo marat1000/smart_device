@@ -18,7 +18,7 @@
 
 .page-header__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .page-header__logo {
@@ -27,6 +27,7 @@
 }
 
 .page-header__button {
+  margin-top: 19px;
   margin-left: 40px;
 
   @media (max-width: $tablet-width-max) {

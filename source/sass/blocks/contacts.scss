@@ -9,6 +9,8 @@
   color: $color-2;
 
   @include reset;
+
+  margin-top: 19px;
 }
 
 .contacts li:last-child {
